@@ -1,0 +1,52 @@
+@use 'sass:list'
+
+$white:         #fff
+$grey-lighter:  #f6f8f8
+$grey-light:    #f0f3f4
+$grey-blue:     #dce0e1
+$grey:          #dee5e7
+$grey-dark:     #bac2c4
+$grey-darker:   #999
+$black-light:   #555
+$black-almost:  #444
+$black:         #333
+
+$red-light:     #ff4040
+$red:           #e60000
+$red-dark:      #DB0000
+$orange-light:  #ffb365
+$orange:        #f37f20
+$orange-dark:   #C75F08
+$green:         #57da7e
+$blue-light:    #54aec9
+$blue:          #1BA1E2
+
+$android:       #A4C639
+$ios:           #8E8E93
+$viber:         #7360f2
+
+/* Snackbar Message Common Level Colors */
+$info:          $blue
+$success:       #2d9a48
+$warn-yellow:   #febf00
+$error:         $red-dark
+
+/* Chart Colors */
+$blue-dark:     #112951
+$ciel-light:    #72d8cb
+$ciel:          #2d92da
+
+/* Grey Scale Colors/Names List */
+$grey-scale-colors: $white $grey-lighter $grey-light $grey-blue $grey $grey-dark $grey-darker $black-light $black-almost $black transparent
+$grey-scale-color-names: 'white' 'grey-lighter' 'grey-light' 'grey-blue' 'grey' 'grey-dark' 'grey-darker' 'black-light' 'black-almost' 'black' 'transparent'
+
+/* UI Colors/Names List */
+$ui-colors: $red-light $red $red-dark $orange-light $orange $orange-dark $green $blue-light $blue $android $ios $viber $info $success $warn-yellow $error
+$ui-color-names: 'red-light' 'red' 'red-dark' 'orange-light' 'orange' 'orange-dark' 'green' 'blue-light' 'blue' 'android' 'ios' 'viber' 'info' 'success' 'warn-yellow' 'error'
+
+/* Chart Colors */
+$chart-colors: $blue-dark $ciel-light $ciel
+$chart-color-names: 'blue-dark' 'ciel-light' 'ciel'
+
+$all-colors: list.join(list.join($grey-scale-colors, $ui-colors, space), $chart-colors, space)
+$all-color-names: list.join(list.join($grey-scale-color-names, $ui-color-names, space), $chart-color-names, space)
