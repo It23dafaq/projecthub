@@ -2,14 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ApplicationRoutingModule } from './routes/application-routing.module';
-import { ApplicationComponent } from './containers/application.component';
+import { AppOverviewContainerComponent } from './containers/app-overview-container/app-overview-container.component';
+import { SharedModule } from '../shared/shared.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
-  declarations: [ApplicationComponent],
+  declarations: [AppOverviewContainerComponent],
   imports: [
     CommonModule,
-    ApplicationRoutingModule
+    ApplicationRoutingModule,
+    SharedModule,
+    FlexLayoutModule
   ]
 })
 export class ApplicationModule { }

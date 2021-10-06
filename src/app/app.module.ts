@@ -12,11 +12,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppToolbarComponent
+    AppToolbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

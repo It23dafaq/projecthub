@@ -9,18 +9,18 @@
    <div fxLayout="row" fxFlex="60" fxLayoutAlign="center end">    
         <form class="example-form mt-20px">
             <mat-form-field class="example-full-width" >
-              <input type="text" matInput placeholder="Search">
+              <input type="text" matInput (click)="checkPlaceHolder()" (blur)="checkPlaceHolder()" placeholder=" {{myplaceHolder}} " (input)="Search($event)">
               <mat-icon class="tranformonY" matSuffix>search</mat-icon>
             </mat-form-field>
           </form>
    </div> 
-   <div fxLayout="row" fxFlex fxLayoutAlign="end center"> 
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-            <mat-icon>favorite</mat-icon>
-        </button>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-            <mat-icon>share</mat-icon>
-        </button>
+   <div class="margin-left50px" fxLayout="row" fxFlex fxLayoutAlign="center center" fxLayoutGap='5px'> 
+        <a mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['/auth/login']">
+            Log in
+        </a>
+        <p class="tranformonY small">/</p>
+        <a mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" [routerLink]="['/auth/register']">
+            Register
+        </a>
    </div> 
-
   </mat-toolbar>

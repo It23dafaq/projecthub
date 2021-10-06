@@ -1,0 +1,28 @@
+<div class="flex-wrapper" fxLayout="column" fxLayoutAlign="start space-between">
+    <div fxLayout="row"   class="bgstyle" ></div>
+    <div fxLayout="row"   fxLayoutAlign="space-between center" >
+        <div fxLayout="row" fxLayoutGap="27px">
+            <img class="circular-square transform-ty-90" [src]=imgSrc alt="Avatar">
+            <div fxLayout="column"  class="margin-top10px">
+                <h2 class="line-height10px">Constantinos </h2>
+                <h2 class="line-height10px">Foulidis</h2>
+                <h3 class="color-blue line-height10px">Contact Info</h3>
+            </div>
+        </div>
+        <div fxLayout="row">
+            <mat-icon class="transform-ty-100 mr-50px" matSuffix>edit</mat-icon>
+        </div>
+    </div>
+  <div fxLayout="row" fxLayoutAlign="center space-evenly">  
+    <div fxLayout="row"  fxFlex="20">
+        <mat-icon class="Font-size-xxl">add</mat-icon>
+    </div>
+    <div fxLayout="row"  fxFlex="60">
+        <app-project-card></app-project-card>
+    </div>
+    
+    <div fxLayout="row"  fxFlex>
+        <app-info-card></app-info-card>
+    </div>
+  </div>
+</div>
